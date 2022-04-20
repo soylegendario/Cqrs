@@ -21,8 +21,8 @@ services.AddScoped<ICommandDispatcher, CommandDispatcher>();
 services.AddScoped<IQueryDispatcher, QueryDispatcher>();
 
 // Commands/Queries handlers
-services.AddScoped<ICommandHandler<CreateProduct>, CreateProductHandler>();
-services.AddScoped<IQueryHandler<GetProducts, IEnumerable<Product>>, GetProductsHandler>();
+services.AddScoped<ICommandHandler<CreateProductCommand>, CreateProductCommandHandler>();
+services.AddScoped<IQueryHandler<GetProductsQuery, IEnumerable<Product>>, GetProductsQueryHandler>();
 
 var app = builder.Build();
 // Configure the HTTP request pipeline.

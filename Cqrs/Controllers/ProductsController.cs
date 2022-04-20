@@ -25,17 +25,17 @@ public class ProductsController : Controller
     [Route("{fromId:int}/{toId:int}")]
     public async Task<IActionResult> Get(int fromId = 1, int toId = 10)
     {
-        var query = new GetProducts
+        var query = new GetProductsQuery
         {
             FromId = fromId,
             ToId = toId
         };
-        var products = await _queryDispatcher.DispatchAsync<GetProducts, IEnumerable<Product>>(query);
+        var products = await _queryDispatcher.DispatchAsync<GetProductsQuery, IEnumerable<Product>>(query);
         return Ok(products);
     }
     
     [HttpPost]
-    public async Task<IActionResult> Post([FromBody] CreateProduct command)
+    public async Task<IActionResult> Post([FromBody] CreateProductCommand command)
     {
         await _commandDispatcher.DispatchAsync(command);
         return Ok();
