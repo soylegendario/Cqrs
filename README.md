@@ -1,2 +1,2 @@
 # Cqrs
-Proof of concept of a simple CQRS implementation
+Proof of concept for a simple CQRS implementation

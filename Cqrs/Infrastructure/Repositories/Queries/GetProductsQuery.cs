@@ -1,6 +1,6 @@
 using Cqrs.Queries;
 
-namespace Cqrs.Domain.Queries;
+namespace Cqrs.Repositories.Queries;
 
 public class GetProductsQuery : IQuery
 {

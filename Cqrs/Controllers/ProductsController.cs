@@ -1,8 +1,8 @@
 using Cqrs.Commands;
 using Cqrs.Domain;
-using Cqrs.Domain.Commands;
-using Cqrs.Domain.Queries;
 using Cqrs.Queries;
+using Cqrs.Repositories.Commands;
+using Cqrs.Repositories.Queries;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Cqrs.Controllers;

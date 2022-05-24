@@ -1,6 +1,6 @@
 using Cqrs.Commands;
 
-namespace Cqrs.Domain.Commands;
+namespace Cqrs.Repositories.Commands;
 
 public class CreateProductCommand : ICommand
 {

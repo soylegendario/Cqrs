@@ -1,6 +1,7 @@
+using Cqrs.Domain;
 using Cqrs.Queries;
 
-namespace Cqrs.Domain.Queries;
+namespace Cqrs.Repositories.Queries;
 
 public class GetProductsQueryHandler : IQueryHandler<GetProductsQuery, IEnumerable<Product>>
 {
